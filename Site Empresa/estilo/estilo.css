@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Source+Sans+Pro');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #2E2E2E;
+}
+
+/*CABECALHO*/
+header{
+	text-align: center;
+	width: 100%;
+	height: 45em;
+	background: url(transition5.jpg) center top no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.fundoOpacoHeader{
+	width: 100%;
+	height: 45em;
+	background-color: rgba(0,0,0,0.4);
+}
+
+header h1{
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 0;
+	padding: 0;
+	text-shadow: 1px 1px 6px black;
+}
+
+#logo{
+	width: 100%;
+	height: 10em;
+	background: url(logoDesenho.png) center no-repeat;
+	background-size: 15%;
+	position: relative;
+	top: 14em;
+}
+
+header h2{
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 6.5em;
+	padding: 0;
+	text-shadow: 1px 1px 6px black;
+}
+
+#botaoInicio{
+	position: relative;
+	top: 11em;
+	color: white;
+	border-color: white;
+}
+
+#botaoInicio:hover{
+	border-color: cornflowerblue;
+}
+
+/*NAVBAR*/
+
+nav{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999999;
+	transition: 0.3s ease;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	display: inline-block;
+	float: left;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	display: block;
+	padding: 1.5em;
+	position: relative;
+	left: 0;
+	transition: 0.3s ease;
+}
+
+nav a:hover{
+	background-color: rgba(255,255,255,0.3);
+}
+
+#logoNav{
+	width: 100%;
+	padding: 2em;
+	background: url(logoDesenhoBorda.png) center no-repeat;
+	background-size: cover;
+	position: relative;
+	top: 0.1em;
+	left: 0.1em;
+}
+/*CONTEUDO*/
+
+.noHr{
+	color: transparent;
+	background-color: transparent;
+	border: 1px solid transparent;
+}
+
+h2{
+	font-family: 'Quicksand', sans-serif;
+}
+
+h3{
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	padding: 1em;
+}
+
+.icone{
+	font-size: 3.4em;
+	margin: 0;
+	padding: 0;
+	color: cornflowerblue;
+}
+
+.botao{
+	position: relative;
+	top: 1.5em;
+	padding: 1em;
+	color: cornflowerblue;
+	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+	border: 2px solid cornflowerblue;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+
+.botao:hover{
+	background-color: cornflowerblue;
+	color: white;
+}
+
+.tituloSection{
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-style: double;
+	text-decoration-color: cornflowerblue;
+}
+
+main{
+	width: 100%;
+	background-color: rgb(240,240,240);
+}
+
+section{
+	width: 100%;
+	height: 45em;
+	padding: 1%;
+	padding-top: 5%;
+	padding-bottom: 1%;
+	z-index: 1;
+}
+
+.asideEsquerda{
+	float: left;
+	width: 50%;
+	height: 42em;
+	padding: 1em;
+	text-align: center;
+	color: white;
+}
+
+.asideDireita{
+	float: left;
+	width: 50%;
+	height: 42em;
+	padding: 1em;
+	text-align: center;
+	color: white;
+}
+
+.conteudo20{
+	float: left;
+	width: 23%;
+	height: 15em;
+	margin: 1%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.conteudo20 p{
+	margin: 1em;
+	font-size: 1.2em;
+}
+
+.conteudo30{
+	float: left;
+	width: 30%;
+	height: 15em;
+	margin: 1.66666666667%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.conteudo30 p{
+	margin: 1em;
+	font-size: 1.2em;
+}
+
+
+.conteudo50{
+	float: left;
+	width: 48%;
+	height: 15em;
+	margin: 1%;
+	text-align: center;
+}
+
+.conteudo50 p{
+	margin: 0.5em;
+	font-size: 1.1em;
+}
+
+.conteudo100{
+	clear: both;
+	width: 98%;
+	height: 15em;
+	margin: 1%;
+	text-align: center;
+}
+
+.tituloConteudo100{
+	margin: 0.5em;
+	font-size: 1.3em;
+}
+
+.conteudo100 p{
+	margin: 0.5em;
+	font-size: 1.1em;
+}
+
+.fundoOpacoConteudo{
+	width: 100%;
+	height: 15em;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.caixa100{
+	clear: both;
+	width: 98%;
+	margin: 1%;
+	text-align: center;
+}
+
+/*TRANSITION'S*/
+
+.transition{
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 45em;
+	background-color: green;
+	z-index: 0;
+}
+
+.tituloTransition{
+	text-align: center;
+	color: white;
+	margin: 0;
+	padding: 0;
+	padding-top: 2.5em;
+	text-decoration: underline;
+	text-decoration-style: double;
+	text-decoration-color: cornflowerblue;
+}
+
+.fundoOpacoTransition{
+	width: 100%;
+	height: 45em; 
+	padding: 2%;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#banner1{
+	background: url(transition6.jpg) center top no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#banner2{
+	background: url(transition0.jpg) center top no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+
+#banner3{
+	background: url(transition4.jpg) center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.conteudoAside{
+	width: 100%;
+	position: relative;
+	top: 7.7em;
+	font-size: 1.3em;
+	background-color: rgba(0,0,0,0.7);
+	padding: 1em;
+	border-radius: 5px;
+	box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.5);
+}
+
+#videoTransition{
+	width: 100%;
+	height: 20em;
+	position: relative;
+	top: 9em;
+	border-radius: 5px;
+	box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.5);
+}
+
+/*HOME*/
+
+#novosClientes{
+	color: white;
+	background: url(fundo3.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#quemSomos{
+	color: white;
+	background: url(fundo4.jpg) center top no-repeat;
+	background-size: cover;
+	background-position: 0em -2em;
+}
+
+#torneCliente{
+	color: white;
+	background: url(fundo5.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#home .conteudo30{
+	box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.5);
+}
+
+.botaoInicio{
+	position: relative;
+	top: 3em;
+	padding: 1em;
+	color: white;
+	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+	border: 2px solid white;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+
+.botaoInicio:hover{
+	background-color: cornflowerblue;
+	border-color: cornflowerblue;
+}
+
+.textoTransition{
+	color: white;
+	font-size: 1.4em;
+}
+
+#banner1 h2{
+	color: white;
+	font-size: 1.5em;
+}
+
+.imgBanner1{
+	width: 100%;
+	height: 20em;
+	background: url(fundoTemplates.jpg) center no-repeat;
+	background-size: cover;
+	border-radius: 5px;
+	box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.5);
+}
+
+.efeitoBanner1{
+	width: 100%;
+	height: 20em;
+	background-color: rgba(0,0,0,0);
+	border-radius: 5px;
+	transition: 0.3s ease;
+	overflow: auto;
+}
+
+.imgBanner1:hover .efeitoBanner1{
+	background-color: rgba(0,0,0,0.8);
+}
+
+.efeitoBanner1 h3{
+	color: white;
+	font-size: 1.3em;
+	transition: 0.3s ease;
+	margin: 0;
+	padding: 0.5em;
+	background-color: rgba(0,0,0,0.7);
+	
+}
+
+.imgBanner1:hover .efeitoBanner1 h3{
+	color: white;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+
+.efeitoBanner1 p{
+	text-align: justify;
+	font-size: 1.1em;
+	color: white;
+	display: none;
+	margin: 1em;
+}
+
+.imgBanner1:hover .efeitoBanner1 p{
+	display: block;
+}
+
+.efeitoBanner1 a{
+	display: none;
+	color: white;
+	border-color: white;
+	margin-bottom: 1em;
+}
+
+.imgBanner1:hover .efeitoBanner1 a{
+	display: inline-block;
+}
+
+.efeitoBanner1 a:hover{
+	border-color: cornflowerblue;
+}
+
+#template1{
+	background: url(fundoTemplate1.jpg) center top no-repeat;
+	background-size: cover;
+}
+
+#template2{
+	background: url(fundoTemplate2.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#template3{
+	background: url(fundoTemplate3.jpg) center no-repeat;
+	background-size: cover;
+}
+
+/*SERVIÇOS*/
+
+.quadroProduto{
+	float: left;
+	text-align: center;
+	width: 23%;
+	height: 13em;
+	margin: 1%;
+	margin-top: 4%;
+	border-radius: 5px;
+	box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.5);
+}
+
+#ec1{
+	background: url(ecommerce1.jpg) center top no-repeat;
+	background-size: cover;
+}
+
+#ec2{
+	background: url(ecommerce2.jpg) center top no-repeat;
+	background-size: cover;
+}
+
+#em1{
+	background: url(empresarial1.jpg) center top no-repeat;
+	background-size: cover;
+}
+
+#em2{
+	background: url(empresarial2.jpg) center top no-repeat;
+	background-size: cover;
+}
+
+#pe1{
+	background: url(pessoal1.jpg) center top no-repeat;
+	background-size: cover;
+}
+
+#pe2{
+	background: url(pessoal2.jpg) center top no-repeat;
+	background-size: cover;
+}
+
+#pe3{
+	background: url(pessoal3.jpg) center top no-repeat;
+	background-size: cover;
+}
+
+#pe4{
+	background: url(pessoal4.jpg) center top no-repeat;
+	background-size: cover;
+}
+
+.efeitoQuadro{
+	width: 100%;
+	height: 13em;
+	background-color: rgba(0,0,0,0);
+	transition: 0.3s ease;
+	border-radius: 5px;
+}
+
+
+.quadroProduto:hover .efeitoQuadro{
+	background-color: rgba(0,0,0,0.6);
+}
+
+.efeitoQuadro h3{
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	padding: 0.5em;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	transition: 0.3s ease;
+}
+
+.quadroProduto:hover .efeitoQuadro h3{
+	font-size: 1.4em;
+}
+
+.botaoTemplates{
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	padding: 1em;
+	position: relative;
+	top: 4.5em;
+	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+	border-radius: 5px;
+	border: 2px solid white;
+	transition: 0.3s ease;
+	display: none;
+}
+
+.botaoTemplates:hover{
+	background-color: cornflowerblue;
+	border-color: cornflowerblue;
+}
+
+.quadroProduto:hover .botaoTemplates{
+	display: inline-block;
+}
+
+/*CONTATO*/
+
+.formularioContato{
+	width: 80%;
+	margin: 10%;
+	margin-top: 0;
+	margin-bottom: 1em;
+	background-color: cornflowerblue;
+	border-radius: 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+form{
+	text-align: left;
+	padding: 2em;
+}
+
+input{
+	width: 100%;
+	margin: 0;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	padding: 1em;
+	border-radius: 5px;
+	transition: 0.3s ease;
+	border: none;
+}
+
+input:focus{
+	background-color: rgb(220,220,255);
+}
+
+input[type=submit]{
+	float: none;
+	width: 30%;
+	padding: 1em;
+	margin: 35%;
+	margin-top: 1em;
+	margin-bottom: 0;
+	border-radius: 5px;
+	background-color: white;
+	border: none;
+	font-size: 1em;
+}
+
+form label{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	margin: 1%;
+	margin-right: 0;
+}
+
+select{
+	text-align: center;
+	width: 100%;
+	padding: 1em;
+	margin: 0;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	border-radius: 5px;
+	border: none;
+}
+
+textarea{
+	width: 100%;
+	height: 7em;
+	margin: 0;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	border-radius: 5px;
+	resize: none;
+	transition: 0.3s ease;
+	font-family: 'Source Sans Pro', sans-serif;
+	border: none;
+}
+
+textarea:focus{
+	background-color: rgb(220,220,255);
+}
+
+#iconeTextArea{
+	position: relative;
+	top: -4.5em;
+}
+
+/*MAPA DO SITE*/
+
+#mapaSite{
+	height: 30em;
+}
+
+/*FOOTER*/
+
+footer{
+	width: 100%;
+	background-color: #2E2E2E;
+	color: white;
+	box-shadow: 0px -4px 16px 0px rgba(0,0,0,0.3);
+	text-align: center;
+}
+
+.footer h3{
+	padding: 0;
+	margin: 0;
+}
+
+.linkFooter{
+	color: white;
+	text-decoration: none;
+	margin: 0.5em;
+}
+
+.footerAbaixo{
+	clear: both;
+	color: white;
+	background-color: black;
+	position: relative;
+	bottom: 0;
+	margin-top: 1em;
+	padding: 1em;
+}

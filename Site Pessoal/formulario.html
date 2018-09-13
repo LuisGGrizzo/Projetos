@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Estrutura basica de uma pagina HTML</title>
+	</head>
+	<body>
+		<a href="semestre1.html">Voltar</a>
+	
+		<hr>
+		
+		<form method="post" action="">
+			<h1>Entrada de texto</h1>
+			Digite seu nome completo:
+			<input type="text" placeholder="digite seu nome" size="15" maxlength="10">
+			<br>
+			Digite sua senha:
+			<input type="password" size="15" maxlength="10">
+			<br>
+			Entrada oculta:
+			<input type="hidden" value="12345">
+			
+			<hr>
+			
+			<h1> Checkbox: permite escolher varias opções:</h1>
+			Quais Veículos você possui?
+			<br>
+			<input type="checkbox" name="veiculo" value="bicicleta">EU TENHO UMA BICICLETA
+			<br>
+			<input type="checkbox" name="veiculo" value="carro">EU TENHO UM CARRO
+			
+			<hr>
+			
+			<h1>Radio: permite escolher apenas uma das opções:</h1>
+			<input type="radio" name="sexo" value="masc">Masculino
+			<br>
+			<input type="radio" name="sexo" value="fem">Feminino
+			
+			<hr>
+			
+			<h1>Textarea: entrada de várias linhas de texto</h1>
+			<textarea name="texto" rows="10" cols="50">
+			</textarea>
+			
+			<hr>
+			
+			<h1>Menus</h1>
+			Onde você pretende fazer turismo nas férias?
+			<select name="destino">
+				<option>Rio de Janeiro
+				<option>Fortaleza
+				<option>Florianópolis
+				<option>Brasília
+				<option>Manaus
+			</select>
+			
+			<hr>
+			
+			<h1>Botão de Limpeza</h1>
+			<input type="reset" name="cancelar" value="LIMPAR">
+			
+			<hr>
+			
+			<h1>Botão de Submissão</h1>
+			<input type="submit" name="enviar" value="ENVIAR">
+		</form>
+	</body>
+</html>

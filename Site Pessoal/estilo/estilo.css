@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto');
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #E4E4E4;
+	color: #2E2E2E;
+	font-family: 'Roboto', sans-serif;
+}
+
+.texto-centralizado{
+	padding: 0;
+	text-indent: 0;
+	text-align: center;
+}
+
+hr{
+	position: relative;
+	top: -7em;
+}
+
+/*CABEÇALHO*/
+
+.cabecalho{
+	height: 20em;
+	width: 100%;
+	padding-top: 1em;
+	background-color: red;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.fundo-opaco{
+	background-color: rgba(0,0,0,0.5);
+	background-size: cover;
+	margin: 0;
+	margin-top: -1em;
+	padding: 0;
+	width: 100%;
+	height: 21em;
+}
+
+#nome{
+	width: 50%;
+	margin: 25%;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 1em;
+	text-align: left;
+	position: relative;
+	top: 5em;
+	color: goldenrod;
+}
+
+#curso{
+	width: 50%;
+	margin: 25%;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 1.3em;
+	text-align: left;
+	position: relative;
+	top: 7em;
+	color: goldenrod;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+#home{
+	background: url(home.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+#fatec{
+	background: url(fatec.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+#projetos{
+	background: url(projetos.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+#hobbies{
+	background: url(hobbies.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+#links{
+	background: url(links.jpeg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+#semestres{
+	background: url(semestres.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+#logo-site{
+	background-color: goldenrod;
+	position: fixed;
+	top: -1.5em;
+	right: 1em;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 990;
+	transition: all 0.4s ;
+	transition-timing-function: ease-out;
+}
+
+/*NAV*/
+
+#check{
+	display: none;
+}
+
+#check:checked ~ nav{
+	transform: translate(100%);
+}
+
+.icone-nav{
+	position: fixed;
+	top: 1.2em;
+	font-size: 1.5em;
+	padding: 0.5em;
+	padding-left: 1em;
+	background-color: goldenrod;
+	cursor: pointer;
+	z-index: 999;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	transition: 0.4s;
+}
+
+nav{
+	width: 16%;
+	height: 86%;
+	z-index: 998;
+	position: fixed;
+	top: 0;
+	left: -16%;
+	padding-top: 6em;
+	background-color: #2E2E2E;
+	transition: all 0.3s linear;
+	overflow: auto;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	width: 100%;
+	margin: 0;
+}
+
+nav a, #drop-btn{
+	display: block;
+	text-decoration: none;
+	font-size: 0.8em;
+	color: #E4E4E4;
+	padding: 1em;
+}
+
+ nav a:hover, #drop-btn:hover{
+	cursor: pointer;
+	color: goldenrod;
+	background-color: #0D0D0D;
+}
+
+.ativo{
+	color: #2E2E2E;
+	background-color: goldenrod;
+}
+
+.sub-ativo{
+	background-color: #0D0D0D;
+	animation-name: ani-sub-ativo;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes ani-sub-ativo{
+	50%{
+		background: #1E1E1E;
+	}
+	100%{
+		background-color: #0D0D0D;
+	}
+}
+
+.link-desab{
+	pointer-events: none;
+	color: gray;
+}
+
+#drop:hover #panel{
+	background-color: #212121;
+}
+
+#drop:hover #drop-btn{
+	background-color: #0D0D0D;
+}
+
+#panel{
+	list-style-type: none;
+    display: none;
+	font-size: 0.9em;
+	padding: 0;
+	margin: 0;
+}
+
+/*CONTEUDO*/
+
+h2{
+	font-family: 'Josefin Sans', sans-serif;
+	text-decoration: underline;
+	text-decoration-color: darkgoldenrod;
+	font-size: 1.7em;
+	padding-left: 1em;
+	margin: 0;
+	margin-top: 0.4em;
+	margin-bottom: 0.6em;
+}
+
+h3{
+	font-family: 'Josefin Sans', sans-serif;
+	color: darkgoldenrod;
+	font-size: 1.4em;
+	padding-left: 1em;
+	margin: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.titulo-pagina{
+	font-family: 'Josefin Sans', sans-serif;
+	width: 50%;
+	margin: 25%;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+	position: relative;
+	top: 2.5em;
+	left: -0.7em;
+	color: goldenrod;
+	text-decoration: none;
+	font-size: 4em;
+}
+
+.artigo-centralizado-100{
+	clear: both;
+	width: 100%;
+	margin-top: 1.5em;
+	margin-bottom: -7em;
+	position: relative;
+	top: -7em;
+	border-radius: 5px;
+	background-color: #CDCDCD;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.artigo-centralizado{
+	clear: both;
+	width: 50%;
+	margin: 25%;
+	margin-top: 1.5em;
+	margin-bottom: -5em;
+	padding: 1em;
+	position: relative;
+	top: -7em;
+	border-radius: 5px;
+	background-color: #CDCDCD;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.a-principal{
+	width: 32%;
+}
+
+.a-secundario{
+	width: 18%;
+}
+
+.w-25{
+	width: 25%;
+}
+
+.artigo-esquerda{
+	float: left;
+	margin-top: 1.5em;
+	margin-left: 21.7%;
+	margin-bottom: -7em;
+	padding: 1em;
+	position: relative;
+	top: -7em;
+	border-radius: 5px;
+	background-color: #CDCDCD;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.artigo-direita{
+	float: left;
+	margin-top: 1.5em;
+	margin-left: 2%;
+	margin-bottom: -7em;
+	padding: 1em;
+	position: relative;
+	top: -7em;
+	border-radius: 5px;
+	background-color: #CDCDCD;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.caixa-100-35{
+	position: relative;
+	top: -1.5em;
+	width: 100%;
+	height: 35em;
+	box-shadow: 0px 3px 16px 3px rgba(0,0,0,0.4);
+	background-color: green;
+}
+
+.caixa-100-30{
+	position: relative;
+	top: -1.5em;
+	width: 100%;
+	height: 30em;
+	box-shadow: 0px 3px 16px 3px rgba(0,0,0,0.4);
+	background-color: green;
+}
+
+.caixa-100-25{
+	position: relative;
+	top: -1.5em;
+	width: 100%;
+	height: 25em;
+	box-shadow: 0px 3px 16px 3px rgba(0,0,0,0.4);
+	background-color: green;
+}
+
+.no-card{
+	position: relative;
+	top: 0;
+	margin-top: 0;
+	margin-bottom: 2em;
+	padding-top: 0;
+	background-color: transparent;
+	border: 0px solid transparent;
+	box-shadow: 0px 0px 0px 0px;
+}
+
+.texto{
+	text-align: justify;
+	text-indent: 1em;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.titulo-esquerda{
+	position: relative;
+	left: -0.3em;
+}
+
+.creditos{
+	text-align: right;
+}
+
+.ti-off{
+	text-indent: 0;
+}
+
+.clear-float{
+	clear: both;
+}
+
+.ft-global{
+	float: left;
+	width: 35%;
+	margin: 1em;
+	border-bottom: 4px solid darkgoldenrod;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.ft-global-dividida{
+	width: 75%;
+	margin: 14.5%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-bottom: 4px solid darkgoldenrod;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+video{
+	width: 100%;
+	margin-top: 1em;
+	border-bottom: 4px solid darkgoldenrod;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.celula-50-esquerda{
+	width: 48%;
+	float: left;
+	margin: 0;
+	margin-left: -1%;
+}
+
+.celula-50-direita{
+	width: 48%;
+	float: left;
+	margin: 0;
+	margin-left: 4%;
+}
+
+/*FOOTER*/
+
+footer{
+	clear: both;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: goldenrod;
+	text-align: center;
+}
+
+footer a{
+	color: #2E2E2E;
+	text-decoration: none;
+}
+
+.coluna-centro-footer{
+	padding: 2em;
+}
+
+.cr{
+	width: 100%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: #C79020;
+	
+}
+
+/*HOME*/
+
+#ft-perfil{
+	width: 13em;
+	border-radius: 50%;
+	border: 4px solid darkgoldenrod;
+	margin: 1em;
+	float: left;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.icone-home{
+	float: left;
+	font-size: 5em;
+	text-align: center;
+	width: 1em;
+	margin: 0.5em;
+	margin-top: 0.2em;
+	margin-bottom: 0.3em;
+	padding: 0.1em;
+}
+
+#mapa{
+	width: 100%;
+	height: 350px;
+	border: 0px solid transparent;
+	box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.3);
+}
+
+/*PROJETOS*/
+
+#icone-rotacao {
+    font-size: 2em;
+    animation-name: animacao-icone;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animacao-icone{
+	100%{
+		transform : rotate(360deg);
+	}
+}
+
+audio{
+	width: 100%;
+	border-bottom: 4px solid darkgoldenrod;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+	border-radius: 25px;
+}
+
+.ft-projetos{
+	width: 36%;
+	margin: 32%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-bottom: 4px solid darkgoldenrod;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+/*HOBBIES*/
+
+.caixa-hobbies{
+	width: 100%;
+	height: 30em;
+	box-shadow: 0px 3px 16px 3px rgba(0,0,0,0.5);
+}
+
+.fundo-opaco-hobbies{
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 30em;
+}
+
+.titulo-hobbie{
+	color: #E4E4E4;
+	text-align: center;
+	position: relative;
+	top: 1.5em;
+}
+
+.ft-hobbies{
+	float: left;
+	width: 20%;
+	margin: 6.5%;
+	margin-top: 5em;
+	border-bottom: 4px solid darkgoldenrod;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.centro-h{
+	width: 21%;
+}
+
+#futebol{
+	background: url(Futebol.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#video-game{
+	background: url(video-game.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#musica{
+	background: url(musica.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/*LINKS*/
+
+.celula-links{
+	float: left;
+	width: 22%;
+	margin: 1.5%;
+	margin-bottom: 3em;
+}
+
+.ft-links{
+	float: left;
+	width: 12%;
+	margin: 2em;
+	margin-top: 0;
+	margin-bottom: 0;
+	border-radius: 15px;
+}
+
+.text-align-link{
+	position: relative;
+	top: 0.7em;
+	text-align: center;
+}
+
+.linkFerramenta{
+	color: darkgoldenrod;
+	border-radius: 25px;
+	padding: 0.5em;
+	font-family: 'Josefin Sans', sans-serif;
+	transition: 0.3s;
+}
+
+.linkFerramenta:hover{
+	color: #2E2E2E;
+}
+
+#colegas{
+	background: url(colegas.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.titulo-caixa-links{
+	color: #E4E4E4;
+	padding: 1em;
+}
+
+.fundo-opaco-caixa-links{
+	width: 100%;
+	height: 35em;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.celula-caixa-link{
+	float: left;
+	width: 23%;
+	margin: 1%;
+	text-align: center;
+}
+
+.estilo-celula{
+	color: #E4E4E4;
+	text-decoration: none;
+	padding: 0.7em;
+	font-size: 0.8em;
+	border-radius: 20px;
+	background-color: rgba(0,0,0,0.6);
+	transition: all 0.3s;
+}
+
+.estilo-celula:hover{
+	color: goldenrod;
+	background-color: rgba(0,0,0,0.9);
+}
+
+/*SEMESTRES*/
+
+table{
+	border-collapse: separate;
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+table caption{
+	background-color: #2E2E2E;
+	color: #E4E4E4;
+	padding: 0.5em;
+}
+
+th, td{
+	padding: 0.5em;
+	border: 2px solid #2E2E2E;
+	text-align: center;
+}
+
+th{
+	background-color: darkgoldenrod;
+}
+
+.conteudo50{
+	float: left;
+	box-sizing: border-box;
+	width: 50%;
+	padding: 1em;
+	margin-bottom: 1em;
+	height: 20em;
+}
+
+.listaConteudoSemestres{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.listaConteudoSemestres li{
+	margin: 1.5em;
+}
+
+.listaConteudoSemestres a{
+	color: darkgoldenrod;
+	text-decoration: none;
+	background-color: rgba(0,0,0,0.6);
+	padding: 0.5em;
+	border-radius: 5px;
+	border: 2px solid darkgoldenrod;
+	transition: 0.3s ease;
+}
+
+.listaConteudoSemestres a:hover{
+	color: white;
+	border-color: transparent;
+	background-color: darkgoldenrod;
+}

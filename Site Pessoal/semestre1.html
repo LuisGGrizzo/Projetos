@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>1º Semestre</title>
+		<link rel="shortcut icon" href="imagens/ico.gif">
+		<link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header class="cabecalho" id="semestres">
+			<div class="fundo-opaco">
+				<h2 class="titulo-pagina">1º Semestre</h2>
+			</div>
+		</header>
+		<input type="checkbox" id="check">
+		<label class="icone-nav" for="check"><i class="fa fa-bars"></i></label>
+		<nav>
+			<ul>
+				<li><a href="index.html"><i class="fa fa-home"></i> HOME</a></li>
+				<li><a href="fatec.html"><i class="fa fa-graduation-cap"></i> FATEC</a></li>
+				<li id="drop"><span id="drop-btn"><i class="fa fa-list-ul"></i>  SEMESTRES <i class="fa fa-angle-down"></i></span>
+					<ul id="panel">
+						<li><a class="ativo" href="semestre1.html">1º SEMESTRE</a></li>
+						<li><a href="semestre2.html">2º SEMESTRE</a></li>
+						<li><a class="link-desab" href="">3º SEMESTRE</a></li>
+						<li><a class="link-desab" href="">4º SEMESTRE</a></li>
+						<li><a class="link-desab" href="">5º SEMESTRE</a></li>
+						<li><a class="link-desab" href="">6º SEMESTRE</a></li>
+					</ul>
+				</li>
+				<li><a href="projetos.html"><i class="fa fa-star"></i> PROJETOS</a></li>
+				<li><a href="curriculum_profissional.pdf"><i class="fa fa-check"></i> CURRICULUM</a></li>
+				<li><a href="hobbies.html"><i class="fa fa-heart"></i> HOBBIES</a></li>
+				<li><a href="links.html"><i class="fa fa-link"></i> LINKS</a></li>
+			</ul>
+		</nav>
+		<img id="logo-site" src="imagens/logo-site.png">
+		<article class="artigo-centralizado">
+			<h2 class="texto-centralizado">Horário</h2>
+			<table id="horario">
+				<caption>Horário 1º Semestre</caption>
+				<tbody><tr>
+					<th>Horario</th>
+					<th>Segunda</th>
+					<th>Terça</th>
+					<th>Quarta</th>
+					<th>Quinta</th>
+					<th>Sexta</th>
+				</tr>
+				<tr>
+					<td>7h40min - 9h20m</td>
+					<td>Fund. Matemática Elementar<strong> - Áudio 1</strong></td>
+					<td></td>
+					<td></td>
+					<td>Atividades Diversas</td>
+					<td>Design Digital<strong> - Lab 3</strong></td>
+				</tr>
+				<tr>
+					<td>9h30min - 11h10min</td>
+					<td>Padrões de Projetos de Sites 1<strong> - Lab 1</strong></td>
+					<td>Leitura e Produção de Texto<strong> - Sala 202</strong></td>
+					<td>Inglês 1<strong> - Sala 105</strong></td>
+					<td>Algoritimos e Lógica de Programação<strong> - Lab 5</strong></td>
+					<td>Design Digital<strong> - Lab 3</strong></td>
+				</tr>
+				<tr>
+					<td>11h20min - 13h</td>
+					<td>Padrões de Projetos de Sites 1<strong> - Lab 1</strong></td>
+					<td>Leitura e Produção de Texto<strong> - Sala 202</strong></td>
+					<td>Bases da Internet<strong> - Lab 3</strong></td>
+					<td>Algoritimos e Lógica de Programação<strong> - Lab 5</strong></td>
+					<td>Criação de Conteúdo WEB<strong> - NIC</strong></td>
+				</tr>
+			</tbody></table>
+		</article>
+		<article class="artigo-centralizado no-card">
+			<h2 class="texto-centralizado">Conteúdo Disponível</h2>
+			<div class="conteudo50">
+				<h3 class="texto-centralizado">PPSI1</h3>
+				<ul class="listaConteudoSemestres">
+					<li><a href="cabecalho.html">Cabeçalho</a></li>
+					<li><a href="formulario.html">Formulário</a></li>
+					<li><a href="tabelas.html">Tabelas</a></li>
+					<li><a href="imagem.html">Imagens</a></li>
+					<li><a href="listas.html">Listas</a></li>
+					<li><a href="estrutura-html5.html">Estrutura HTML 5</a></li>
+				</ul>
+			</div>
+			<div class="conteudo50">
+				<h3 class="texto-centralizado">Design Digital</h3>
+				<ul class="listaConteudoSemestres">
+					<li><a target="_blank" href="imagens/logo.png">Logo</a></li>
+					<li><a target="_blank" href="imagens/PANFLETO.png">Panfleto</a></li>
+					<li><a target="_blank" href="imagens/cartao-de-visita.png">Cartão de Visitas</a></li>
+				</ul>
+			</div>
+		</article>
+		<footer>
+			<div class="coluna-centro-footer">
+				<a href="https://www.facebook.com/ozzirg.odiag"><i class="fab fa-facebook"></i> Facebook </a> - <a href="https://www.instagram.com/luis_ozzirg/"><i class="fab fa-instagram"></i> Instagram </a> | <a href="http://fatecjahu.edu.br/"><i class="fa fa-home"></i> Fatec</a> - <a href="http://www.cps.sp.gov.br/"><i class="fa fa-home"></i> CPS</a> | <a href="https://www.w3schools.com/"><i class="fa fa-book"></i> W3Schools</a> - <a href="http://celiosormani.pro.br/moodle30/cursos/"><i class="fa fa-book"></i> EAD-ProfºCélio</a>
+			</div>
+			<div class="cr">
+				<span>© Luís Otávio G. Grizzo - 2018 | proluisgrizzo@gmail.com</span>
+			</div>
+		</footer>
+	</body>
+</html>
